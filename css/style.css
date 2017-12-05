@@ -68,21 +68,6 @@ body {
     position: fixed;
     background-size: content;
     background: linear-gradient;
-    /*opacity: 0.8;*/
-}
-.bg-opacity {
-    background-color: #fff;
-    opacity: 0.6;
-    width: 600px;
-    height: 310px;
-    position: absolute;
-    top: 346px;
-    left: 10px;
-}
-.bg-opacity:hover {
-    background-color: #000;
-    color: white;
-    /*opacity: 0.6;*/
 }
 #Home h1 {
     position: absolute;
@@ -90,12 +75,9 @@ body {
     top: 25px;
     font-size: 22px;
     font-family: Occupied, sans-serif;
-    color: #095228;
+    /*color: #095228;*/
     font-weight: bold;
     margin-top: 0;
-}
-#Home h1:hover {
-    color: #34C924;
 }
 #Home p {
     position: absolute;
@@ -107,15 +89,28 @@ body {
     font-size: 18px;
     margin-top: 50px;
     font-family: Occupied, sans-serif;
-    color: #1a1a1a;
 }
-/********************??? Demander à Hélène comment activer color white pour le p et le h1 en hover??? **************/
-/*.bg-opacity < p:hover {
-    color: #fff;
-}*/
-/*#Home p:hover {
-    color: #fff;
-}*/
+.bg-opacity {
+    background-color: #fff;
+    opacity: 0.6;
+    width: 600px;
+    height: 310px;
+    position: absolute;
+    top: 346px;
+    left: 10px;
+}
+.bg-opacity h1{
+  color: #095228;
+}
+.bg-opacity:hover {
+    background-color: #000;
+}
+.bg-opacity:hover p{
+  color: #fff;
+}
+.bg-opacity:hover h1{
+  color: #34C924;
+}
 .button-product {
     position: absolute;
     top: 250px;
@@ -180,6 +175,9 @@ body {
     max-height: 100%;
     margin-bottom: 20px;
 }
+.scale {
+    transform: scaleX(-1);
+}
 h3.title-product {
     text-align: left;
     font-size: 14px;
@@ -211,19 +209,6 @@ h3.title-product {
     position: relative;
     clear: both;
 }
-.bg-store {
-    background-color: #fff;
-    opacity: 0.5;
-    width: 600px;
-    height: 310px;
-    position: absolute;
-    bottom: 13px;
-    right: 10px;
-}
-.bg-store:hover {
-    background-color: #000;
-    /*opacity: 0.6;*/
-}
 #Store img {
     /*opacity: 0.5;*/
 }
@@ -233,12 +218,8 @@ h3.title-product {
     top: 25px;
     font-size: 22px;
     font-family: Occupied, sans-serif;
-    color: #095228;
     font-weight: bold;
     margin-top: 0;
-}
-#Store h2:hover {
-    color: #34C924;
 }
 #Store p {
     position: absolute;
@@ -250,11 +231,30 @@ h3.title-product {
     font-size: 18px;
     margin-top: 50px;
     font-family: Occupied, sans-serif;
-    color: #1a1a1a;
 }
-#Store p:hover {
-    color: #fff;
+.bg-store {
+    background-color: #fff;
+    opacity: 0.5;
+    width: 600px;
+    height: 310px;
+    position: absolute;
+    bottom: 13px;
+    right: 10px;
 }
+
+.bg-store .title-store{
+  color: #095228;
+}
+.bg-store:hover {
+    background-color: #000;
+}
+.bg-store:hover p{
+  color: #fff;
+}
+.bg-store:hover .title-store {
+  color: #34C924;
+}
+
 .social-network {
     display: block;
     position: absolute;
@@ -266,6 +266,7 @@ h3.title-product {
     display: inline-block;
     margin-left: 30px
 }
+
 i.fa.fa-facebook-square, i.fa.fa-twitter-square, i.fa.fa-instagram {
     color: #ef5e9f;
     font-size: 40px;
