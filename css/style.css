@@ -450,12 +450,20 @@ p {
     background-image: linear-gradient(120deg, #ffffff 0%, ##53c695 100%);
 }
 #back-top a {
-  width: 70px;
-  height: 70px;
+  /*width: 70px;
+  height: 70px;*/
 }
-#back-top a i {
+/*#back-top a i {
     font-size: 40px;
     margin-left: 15px;
     color: #fff;
     line-height: 60px;
+}*/
+#back-top a i {
+    font-size: 40px;
+    color: #fff;
+    line-height: 60px;
+    padding-left: 15px;
+    width: 55px;
+    height: 70px;
 }
