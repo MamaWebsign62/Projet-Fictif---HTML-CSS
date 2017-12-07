@@ -135,7 +135,7 @@ body {
 #Product {
     clear: both;
     background-color: #c9aad6;
-    height: 580px;
+    height: 666px;
     background: -webkit-linear-gradient(right bottom, #c9aad6, #fff);
     background: -o-linear-gradient(top left, #c9aad6, #fff);
     background: -moz-linear-gradient(top left, #c9aad6, #fff);
@@ -148,7 +148,7 @@ body {
 #Product h2 {
     margin: 0;
     text-align: right;
-    padding: 80px 10px 0 0;
+    padding: 50px 10px 100px 0;
     font-size: 22px;
     font-family: Occupied, sans-serif;
     color: #861961;
