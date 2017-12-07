@@ -5,7 +5,7 @@
 $(function(){
 
 
-            // /*SCROLL HEADER*/
+            // SCROLL HEADER
             //
             // $('#scroll-header').css({'display':'none'});
             //
@@ -28,7 +28,7 @@ $(function(){
 
 
 
-        /*BACK TOP*/
+        //BACK TOP
 
 
         $('#back-top').hide();
@@ -55,9 +55,18 @@ $(function(){
                     }
                 );
         });
+// SCROLL ANCRE
 
+        $('a[href^="#"]').click(function(){
+	         var the_id = $(this).attr("href");
 
-	/*SOUS-MENU*/
+	          $('html, body').animate({
+		            scrollTop:$(the_id).offset().top
+	          }, 'slow');
+	           return false;
+              });
+
+	//SOUS-MENU
 
   //   $('nav ul li a').mouseenter(function(){
 	// 	$(this).next().fadeIn(400);
